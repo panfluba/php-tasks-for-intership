@@ -1,6 +1,6 @@
 use Northwind;
 SELECT
-    c.id, c.first_name, c.last_name, o.order_date
+    c.id, c.first_name, c.last_name
 FROM
     customers c
 LEFT JOIN
@@ -10,5 +10,5 @@ LEFT JOIN
 GROUP BY
     c.id, c.first_name, c.last_name
 HAVING
-    COUNT(DISTINCT YEAR(o.order_date)) = YEAR(Now()) - 1995
-    AND COUNT(o.id) >= YEAR(Now()) - 1995;
+    COUNT(DISTINCT YEAR(o.order_date)) = YEAR(Now()) - 1994
+    AND COUNT(o.id) >= YEAR(Now()) - 1994;
