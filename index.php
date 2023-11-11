@@ -1,16 +1,16 @@
 <?php
 function removeSmallest($arr){
-
-    if (!empty($arr)) {
+    if(empty($arr)){
+        return "Array is empty";
+    }
     $smallest = min($arr);
-        foreach ($arr as $key => $value){
-            if($value == $smallest){
-                unset($arr[$key]);
-                return implode(',', $arr) . "\n";
-            }
+    foreach ($arr as $key => $value){
+        if($value == $smallest){
+            unset($arr[$key]);
+            break;
         }
     }
-    return "Array is empty";
+    return "[". implode(',', $arr) . "]" . "\n";
 }
 
 echo removeSmallest([1, 2, 3, 4, 5]);
