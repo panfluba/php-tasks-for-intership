@@ -1,6 +1,6 @@
 <?php
 function toArray($str){
-    var_dump(explode(", ", $str));
+    return (explode(", ", $str));
 }
 
 toArray("арбуз, малина, апельсин");//➞ ["арбуз", "малина", "апельсин"]
