@@ -1,5 +1,5 @@
 <?php
-function bbqSkewers($arr): void{
+function bbqSkewers($arr){
     $vegan = 0;
     $nonVegan = 0;
     foreach ($arr as $value){
@@ -8,7 +8,7 @@ function bbqSkewers($arr): void{
         }
         else $vegan++;
     }
-    echo "[{$vegan}, {$nonVegan}]\n";
+    return [$vegan, $nonVegan];
 }
 
 bbqSkewers([
