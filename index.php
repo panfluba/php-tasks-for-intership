@@ -1,7 +1,7 @@
 <?php
 function removeSmallest($arr){
     if(empty($arr)){
-        return "Array is empty";
+        return $arr;
     }
     $smallest = min($arr);
     foreach ($arr as $key => $value){
@@ -10,10 +10,10 @@ function removeSmallest($arr){
             break;
         }
     }
-    return "[". implode(',', $arr) . "]" . "\n";
+    return $arr;
 }
 
-echo removeSmallest([1, 2, 3, 4, 5]);
-echo removeSmallest([5, 3, 2, 1, 4]);
-echo removeSmallest([2, 2, 1, 2, 1]);
-echo removeSmallest([]);
+removeSmallest([1, 2, 3, 4, 5]);
+removeSmallest([5, 3, 2, 1, 4]);
+removeSmallest([2, 2, 1, 2, 1]);
+removeSmallest([]);
