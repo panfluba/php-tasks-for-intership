@@ -5,7 +5,7 @@ function getAbsSum($arr){
             $arr[$key] = $value * (-1);
         }
     }
-    var_dump(array_sum($arr));
+    return (array_sum($arr));
 }
 
 getAbsSum([2, -1, 4, 8, 10]); // ➞ 25
