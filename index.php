@@ -1,6 +1,6 @@
 <?php
 function area($num1, $num2){
-    return ($num1 * $num2) / 2 . "\n";
+    return ($num1 * $num2) / 2;
 }
 
 echo area(3, 2);// ➞ 3
