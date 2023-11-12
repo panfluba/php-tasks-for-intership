@@ -2,9 +2,7 @@
 function alphabetSoup($str){
     $arr = str_split($str);
     sort($arr);
-    foreach ($arr as $value){
-        echo $value;
-    }
+    return implode(($arr));
 }
 
 alphabetSoup("hello");// ➞ "ehllo"
