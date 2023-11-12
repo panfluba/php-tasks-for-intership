@@ -15,7 +15,7 @@ function calculateScores($str){
             $countC++;
         }
     }
-    var_dump($countA . $countB . $countC);
+    return [$countA, $countB, $countC];
 }
 calculateScores("A");
 //[1, 0, 0]
