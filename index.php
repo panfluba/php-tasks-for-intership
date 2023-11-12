@@ -1,6 +1,6 @@
 <?php
 function addition($num1, $num2){
-    return $num1 + $num2 . "\n";
+    return $num1 + $num2;
 }
 
 
