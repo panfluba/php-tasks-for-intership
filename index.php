@@ -1,9 +1,9 @@
 <?php
-function hasSpaces($str) : string{
+function hasSpaces($str){
     if(str_contains($str, " ")){
-        return "true\n";
+        return true;
     }
-    else return "false\n";
+    return false;
 }
 
 echo hasSpaces("hello");// ➞ false
