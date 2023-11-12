@@ -7,12 +7,11 @@ function letterCheck($arr){
 
     // проверка на то, что массив расхождений пустой
     if (count(array_diff($str, $check)) == 0){
-        return 'false';
+        return false;
     }
-    else return 'true';
+    else return true;
 }
-//    var_dump(array_diff($str, $check));
 
-echo letterCheck(["trances", "nectar"]);
-echo letterCheck(["compadres", "DRAPES"]);
-echo letterCheck(["parses", "parsecs"]);
+letterCheck(["trances", "nectar"]);
+letterCheck(["compadres", "DRAPES"]);
+letterCheck(["parses", "parsecs"]);
