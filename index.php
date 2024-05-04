@@ -1,9 +1,6 @@
 <?php
 function lessThanOrEqualToZero($num){
-    if($num <= 0){
-        return true;
-    }
-    else return false;
+    return $num <= 0;
 }
 
 echo lessThanOrEqualToZero(5);// ➞ false
