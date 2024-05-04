@@ -3,7 +3,7 @@ function reverse($str){
     if(strlen($str) == 0 || strlen($str) == 1){
         return $str;
     }
-    else return reverse(substr($str, 1)) . $str[0];
+    return reverse(substr($str, 1)) . $str[0];
 }
 
 echo reverse("hello") . "\n";
