@@ -3,10 +3,10 @@ function solutions($a, $b, $c){
     if(($b**2 - (4 * $a * $c)) > 0){
         return 2;
     }
-    elseif(($b**2 - (4 * $a * $c)) == 0){
+    if(($b**2 - (4 * $a * $c)) == 0){
         return 1;
     }
-    else return 0;
+    return 0;
 }
 
 function solutions1($a, $b, $c){
