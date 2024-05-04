@@ -8,10 +8,10 @@ function calculateScores($str){
         if($value == "A"){
             $countA++;
         }
-        elseif($value == "B"){
+        if($value == "B"){
             $countB++;
         }
-        elseif($value == "C"){
+        if($value == "C"){
             $countC++;
         }
     }
