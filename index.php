@@ -3,11 +3,10 @@ function hurdleJump($arr, $height){
     if(empty($arr)){
         return true;
     }
-
     if(max($arr) > $height){
         return false;
     }
-    else return true;
+    return true;
 }
 
 hurdleJump([1, 2, 3, 4, 5], 5); // ➞ true
