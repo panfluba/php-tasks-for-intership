@@ -27,7 +27,7 @@ function findBob3(array $findBobArray){
     if (in_array("Bob", $findBobArray)) {
         return array_search("Bob", $findBobArray);
     }
-    else return -1;
+    return -1;
 }
 
 echo "\nРешение через линейный поиск: ";
