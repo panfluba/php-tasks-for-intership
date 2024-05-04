@@ -1,9 +1,6 @@
 <?php
 function hasSpaces($str){
-    if(str_contains($str, " ")){
-        return true;
-    }
-    return false;
+    return (str_contains($str, " "));
 }
 
 echo hasSpaces("hello");// ➞ false
