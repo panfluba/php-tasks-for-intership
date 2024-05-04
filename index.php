@@ -9,7 +9,7 @@ function letterCheck($arr){
     if (count(array_diff($str, $check)) == 0){
         return false;
     }
-    else return true;
+    return true;
 }
 
 letterCheck(["trances", "nectar"]);
